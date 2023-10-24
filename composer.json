@@ -1,0 +1,15 @@
+{
+    "name": "reza/zamailer",
+    "description": "email queue with no framework php",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "gac/routing": "dev-main"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
