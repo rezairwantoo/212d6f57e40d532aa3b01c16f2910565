@@ -13,6 +13,12 @@ try {
         [ \App\Controllers\WelcomeController::class, 'Welcome' ],
         Routes::GET 
     );
+
+    $routes->add(
+        '/send',
+        [ \App\Controllers\EmailController::class, 'SendEmail' ],
+        Routes::POST 
+    );
     $routes->handle();
 } catch ( RouteNotFoundException $ex ) {
     $routes->request->status(404, 'Route not found')

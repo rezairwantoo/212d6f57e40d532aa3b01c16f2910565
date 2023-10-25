@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use Gac\Routing\Response;
+use Illuminate\Support\Facades\Validator;
 
 class Controller
 {
@@ -19,4 +20,5 @@ class Controller
         withBody($data)::
         send();
     }
+    
 }

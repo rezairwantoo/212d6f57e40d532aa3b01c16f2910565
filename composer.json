@@ -4,7 +4,9 @@
     "type": "project",
     "require": {
         "php": "^8.0",
-        "gac/routing": "dev-main"
+        "gac/routing": "dev-main",
+        "illuminate/database": "^9.46",
+        "react/socket": "^1.14"
     },
     "license": "MIT",
     "autoload": {
